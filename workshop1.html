@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age in Dog Years</title>
+</head>
+<body>
+  <h1>Age in Dog Years</h1>
+
+  <p id="output"></p>
+
+  <script>
+    function toDogYears(age) {
+      return age * 7;
+    }
+
+    let results = "";
+    let agesToTest = [1, 7, 15];
+
+    for (let i = 0; i < agesToTest.length; i++) {
+      let humanAge = agesToTest[i];
+      let dogAge = toDogYears(humanAge);
+      results += "A person who is " + humanAge + " years old is " +
+                 dogAge + " in dog years.<br>";
+    }
+
+    document.getElementById("output").innerHTML = results;
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Debugging Challenge</h1>
+    <script>
+        // This code is broken! Find and fix the errors.
+        let i = 5
+        let j = 10
+        let k = 25;
+        let l = "Joe";
+         // String needed quotes.
+        const arr = [3, 5, 7];
+        if (i < j) {
+            console.log("i");
+        } else if (j > k) {
+            console.log("k");
+        } else {
+            console.log("j");
+        // Missing closing quote.
+        }
+        for (let i = 0; i <= arr.length; ++i) {
+            console.log(arr[i]);
+        // Went out of bounds, arr had length 3, valid indexes were 0-2.
+        }
+    </script>
+</body>
+</html>
